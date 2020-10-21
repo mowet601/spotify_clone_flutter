@@ -1,3 +1,6 @@
+import 'pages/library/library_controller.dart';
+import 'pages/search/search_controller.dart';
+import 'pages/start/start_controller.dart';
 import 'home_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -6,6 +9,9 @@ import 'home_page.dart';
 class HomeModule extends ChildModule {
   @override
   List<Bind> get binds => [
+        $LibraryController,
+        $SearchController,
+        $StartController,
         $HomeController,
       ];
 
