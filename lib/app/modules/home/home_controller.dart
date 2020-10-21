@@ -8,10 +8,10 @@ class HomeController = _HomeControllerBase with _$HomeController;
 
 abstract class _HomeControllerBase with Store {
   @observable
-  int value = 0;
+  int indexTab = 0;
 
   @action
-  void increment() {
-    value++;
+  void setIndexTab(int newValue) {
+    indexTab = newValue;
   }
 }
