@@ -4,7 +4,7 @@ class CardMusicWidget extends StatelessWidget {
   final String label;
   final String image;
 
-  CardMusicWidget({this.label, this.image});
+  CardMusicWidget({Key key, this.label, this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

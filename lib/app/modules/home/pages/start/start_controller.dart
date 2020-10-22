@@ -7,11 +7,14 @@ part 'start_controller.g.dart';
 class StartController = _StartControllerBase with _$StartController;
 
 abstract class _StartControllerBase with Store {
-  @observable
-  int value = 0;
-
-  @action
-  void increment() {
-    value++;
+  String get greeting {
+    var hour = DateTime.now().hour;
+    if (hour < 12) {
+      return 'Bom dia';
+    }
+    if (hour < 17) {
+      return 'Boa tarde';
+    }
+    return 'Boa noite';
   }
 }

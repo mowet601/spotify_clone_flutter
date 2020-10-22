@@ -7,7 +7,7 @@ class TitleAreaWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(20),
+      margin: EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 20),
       alignment: Alignment.topLeft,
       child: Text(
         title,
