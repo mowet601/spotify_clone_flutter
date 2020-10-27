@@ -1,3 +1,4 @@
+import 'package:spotify_clone_flutter/app/modules/play_music/play_music_module.dart';
 import 'package:spotify_clone_flutter/app/modules/splash/splash_module.dart';
 
 import 'app_controller.dart';
@@ -16,6 +17,7 @@ class AppModule extends MainModule {
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, module: SplashModule()),
         ModularRouter('/home', module: HomeModule()),
+        ModularRouter('/play_music', module: PlayMusicModule()),
       ];
 
   @override
